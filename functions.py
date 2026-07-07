@@ -22,3 +22,13 @@ def fahrenheit_to_celsius(fahrenheit):
 print(fahrenheit_to_celsius(32))  # This will output: 0.0
 print(fahrenheit_to_celsius(212))  # This will output: 100.0
 print(fahrenheit_to_celsius(98.6))  # This will output: 37.0
+
+
+
+#Return values
+# Functions can return values using the return statement. The return statement ends the function execution and sends
+
+def Get_greeting():
+    return "Hello, welcome to the program!"
+message = Get_greeting()
+print(message)  # This will output: Hello, welcome to the program!
