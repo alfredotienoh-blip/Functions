@@ -2,20 +2,20 @@
 """ A function is defined using the key word def followed by the function name and parentheses.
  The code block within every function starts with a colon (:) and is indented."""
  
-def my_function():
+def hello_function():
     print("Hello, World!")
     
-    # This creates a function named my_function that prints "Hello, World!" when called.
+    # This creates a function named hello_function that prints "Hello, World!" when called.
 
 # The code inside the function must be indented, and the function can be called by using its name followed by parentheses.
 
 # Calling the function
 # To call the function, simply use its name followed by parentheses:
-my_function()  # This will output: Hello, World!
+hello_function()  # This will output: Hello, World!
 
 # You can call the same function multiple times
-my_function()  # This will output: Hello, World!
-my_function()  # This will output: Hello, World!
+hello_function()  # This will output: Hello, World!
+hello_function()  # This will output: Hello, World!
 
 def fahrenheit_to_celsius(fahrenheit):
     return (fahrenheit - 32) * 5.0/9.0
@@ -41,5 +41,28 @@ print(get_greeting())  # This will output: Hello, welcome to the program!
 
 #The pass statement
 # Function definations cannot be empty. If you need to create a function placeholder without any code, use the pass statement
-def my_function():
+def placeholder_function():
     pass  # This function does nothing and serves as a placeholder. 
+
+# Python function arguments
+# A function with one argument
+def my_function(fname):
+    print(fname + " Refsnes")
+    
+my_function("Emil")  # This will output: Emil Refsnes
+my_function("Tobias")  # This will output: Tobias Refsnes
+my_function("Linus")  # This will output: Linus Refsnes
+    
+def greet(name):
+    print("Hello, " + name + "!")
+        
+# Call the new function
+greet("Alice")  # This will output: Hello, Alice!
+
+#Number of arguments
+# A function must be called with the correct number of arguments. If a function expects 2 arguments, then you must call it with exactly 2 arguments
+# This function expects 2 arguments and gets 2 arguments
+def my_function(Fname, Lname):
+    print(Fname + " " + Lname)
+    
+my_function("Alfred","Owuor")
