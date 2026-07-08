@@ -101,3 +101,11 @@ def my_function(animal, name):
     print("My " + animal + "'s name is " + name)
     
 my_function("dog", "Buddy")  # This will output: I have a dog. My dog's name is Buddy.
+
+#The order matters with positional arguments
+#Swithing the order of the arguments will change the output
+def my_function(animal, name):
+    print("I have a " + animal)
+    print("My " + animal + "'s name is " + name)
+    
+my_function("Buddy", "dog")  # This will output: I have a Buddy. My Buddy's name is dog.
