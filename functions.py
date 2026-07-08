@@ -84,3 +84,13 @@ def my_function(animal, name):
     print("My " + animal + "'s name is " + name)
     
 my_function(animal = "dog", name = "Buddy")  # This will output: I have a dog. My dog's name is Buddy.
+
+#This way with key arguments, the order of arguments does not matter
+
+def my_function(animal, name):
+    print("I have a " + animal)
+    print("My " + animal + "'s name is " + name)
+    
+my_function(name = "Buddy", animal = "dog")  # This will output: I have a dog. My dog's name is Buddy.
+
+
