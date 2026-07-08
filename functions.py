@@ -76,3 +76,11 @@ my_function("Uganda")  # This will output: I am from Uganda
 my_function()  # This will output: I am from Kenya
 my_function("Tanzania")  # This will output: I am from Tanzania
 my_function("Rwanda")  # This will output: I am from Rwanda
+
+#Keyword arguments
+#You can send arguments with key=value syntax
+def my_function(animal, name):
+    print("I have a " + animal)
+    print("My " + animal + "'s name is " + name)
+    
+my_function(animal = "dog", name = "Buddy")  # This will output: I have a dog. My dog's name is Buddy.
