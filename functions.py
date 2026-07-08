@@ -66,3 +66,13 @@ def my_function(Fname, Lname):
     print(Fname + " " + Lname)
     
 my_function("Alfred","Owuor")
+
+# Default parameters
+# You can also define default values for parameters in a function. If the caller does not provide a value for that parameter, the default value will be used.
+def my_function(country = "Kenya"):
+    print("I am from " + country)
+    
+my_function("Uganda")  # This will output: I am from Uganda
+my_function()  # This will output: I am from Kenya
+my_function("Tanzania")  # This will output: I am from Tanzania
+my_function("Rwanda")  # This will output: I am from Rwanda
