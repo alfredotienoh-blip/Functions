@@ -94,3 +94,10 @@ def my_function(animal, name):
 my_function(name = "Buddy", animal = "dog")  # This will output: I have a dog. My dog's name is Buddy.
 
 
+#Positional arguments
+#When you call a function with arguments without using key words, they are called positional arguments. The order of the arguments matters in this case.
+def my_function(animal, name):
+    print("I have a " + animal)
+    print("My " + animal + "'s name is " + name)
+    
+my_function("dog", "Buddy")  # This will output: I have a dog. My dog's name is Buddy.
