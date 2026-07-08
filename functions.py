@@ -32,3 +32,14 @@ def Get_greeting():
     return "Hello, welcome to the program!"
 message = Get_greeting()
 print(message)  # This will output: Hello, welcome to the program!
+
+#You can use the returned value directly
+
+def get_greeting():
+    return "Hello, welcome to the program!"
+print(get_greeting())  # This will output: Hello, welcome to the program!
+
+#The pass statement
+# Function definations cannot be empty. If you need to create a function placeholder without any code, use the pass statement
+def my_function():
+    pass  # This function does nothing and serves as a placeholder. 
