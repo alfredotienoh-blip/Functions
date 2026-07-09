@@ -194,5 +194,14 @@ def my_function(name):
 
 my_function("Alice")  # This will output: Hello Alice
 
+# Combining positional-only and keyword-only arguments
+# You can combine positional-only and keyword-only arguments in a function definition. Use , / for positional-only arguments and *, for keyword-only arguments.
+
+def my_function(a, b , /, *, c, d):
+    return a + b + c + d
+
+result = my_function(1, 2, c=3, d=4)
+print(result)  # This will output: 10  
+
 
 
