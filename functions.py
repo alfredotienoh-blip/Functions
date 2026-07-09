@@ -147,3 +147,14 @@ def my_function(x, y):
 
 result = my_function(5, 3)
 print(result)  # This will output: 8
+
+#Returning different data types
+#A function that returns a list
+def my_function():
+    return ["Aples","Bananas","Oranges","Grapes"]
+
+fruits = my_function()
+print (fruits[0])
+print(fruits[1])
+print(fruits[2])
+print(fruits[3])
