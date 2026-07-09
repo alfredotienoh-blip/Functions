@@ -166,3 +166,10 @@ def my_function():
 x, y = my_function()
 print("x:", x)  # This will output: x: 50
 print("y:", y)  # This will output: y: 30
+
+#POsitional only arguments
+#You can specify that a function can have only positional arguments. Add , / after the argument
+def my_function(name, /):
+    print("Hello", name)
+    
+my_function("Alice")  # This will output: Hello Alice
