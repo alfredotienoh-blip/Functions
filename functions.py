@@ -205,3 +205,10 @@ def my_function(a, b , /, *, c, d):
 
 result = my_function(1, 2, c=3, d=4)
 print(result)  # This will output: 10  
+
+# Arbitrary arguments
+# You can use *args to pass a variable number of positional arguments to a function. The arguments will be received as a tuple inside the function.
+def my_function(*kids):
+    print("The youngest child is " + kids[2])
+    
+my_function("Emil", "Tobias", "Linus")  # This will output: The youngest child is Linus
