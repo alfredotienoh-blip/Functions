@@ -138,3 +138,12 @@ def my_function(person):
     
 my_person = {"name": "Alice", "age": "30"}
 my_function(my_person)  # This will output: Name: Alice, Age: 30
+
+#Return value
+#Functions can return a value using the return statement
+
+def my_function(x, y):
+    return x + y
+
+result = my_function(5, 3)
+print(result)  # This will output: 8
