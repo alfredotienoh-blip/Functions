@@ -158,3 +158,11 @@ print (fruits[0])
 print(fruits[1])
 print(fruits[2])
 print(fruits[3])
+
+#A function that returns a tuple
+
+def my_function():
+    return(50, 30)
+x, y = my_function()
+print("x:", x)  # This will output: x: 50
+print("y:", y)  # This will output: y: 30
