@@ -66,7 +66,7 @@ greet("Alice")  # This will output: Hello, Alice!
 def my_function(Fname, Lname):
     print(Fname + " " + Lname)
     
-my_function("Alfred","Owuor")
+my_function("Alfred", "Owuor")
 
 # Default parameters
 # You can also define default values for parameters in a function. If the caller does not provide a value for that parameter, the default value will be used.
@@ -86,7 +86,7 @@ def my_function(animal, name):
     
 my_function(animal = "dog", name = "Buddy")  # This will output: I have a dog. My dog's name is Buddy.
 
-# This way with key arguments, the order of arguments does not matter
+# This way, with key arguments, the order of arguments does not matter
 
 def my_function(animal, name):
     print("I have a " + animal)
@@ -96,7 +96,7 @@ my_function(name = "Buddy", animal = "dog")  # This will output: I have a dog. M
 
 
 # Positional arguments
-#When you call a function with arguments without using key words, they are called positional arguments. The order of the arguments matters in this case.
+#When you call a function with arguments without using keywords, they are called positional arguments. The order of the arguments matters in this case.
 def my_function(animal, name):
     print("I have a " + animal)
     print("My " + animal + "'s name is " + name)
@@ -104,16 +104,16 @@ def my_function(animal, name):
 my_function("dog", "Buddy")  # This will output: I have a dog. My dog's name is Buddy.
 
 # The order matters with positional arguments
-# Swithing the order of the arguments will change the output
+# Switching the order of the arguments will change the output
 def my_function(animal, name):
     print("I have a " + animal)
     print("My " + animal + "'s name is " + name)
     
 my_function("Buddy", "dog")  # This will output: I have a Buddy. My Buddy's name is dog.
 
-# Mixing key word and positional arguments
+# Mixing keyword and positional arguments
 # You can mix positional and keyword arguments when calling a function. However, positional arguments must come before keyword arguments.
-#However positional arguments must come before keyword arguments. If you try to put a positional argument after a keyword argument, you will get a syntax error.
+# However, positional arguments must come before keyword arguments. If you try to put a positional argument after a keyword argument, you will get a syntax error.
 
 def my_function(animal, name, age):
     print("I have a " + str(age) + " year old " + animal + " named " + name)
@@ -152,7 +152,7 @@ print(result)  # This will output: 8
 # Returning different data types
 # A function that returns a list
 def my_function():
-    return ["Aples","Bananas","Oranges","Grapes"]
+    return ["Apples", "Bananas", "Oranges", "Grapes"]
 
 fruits = my_function()
 print (fruits[0])
@@ -169,20 +169,20 @@ print("x:", x)  # This will output: x: 50
 print("y:", y)  # This will output: y: 30
 
 # Positional only arguments
-#You can specify that a function can have only positional arguments. Add , / after the argument
+#You can specify that a function can have only positional arguments. Add (, /) after the argument
 def my_function(name, /):
     print("Hello", name)
     
 my_function("Alice")  # This will output: Hello Alice
 
-# Without (,/ you) are allowed to use keyword arguments
+# Without (,/) you are allowed to use keyword arguments
 def my_function(name):
     print("Hello", name)    
     
 my_function(name="Alice")  # This will output: Hello Alice
 
  Keyword-only arguments
-# You can specify that a function can have only keyword arguments. Add *, before the argument
+# You can specify that a function can have only keyword arguments. Add (*,) before the argument
 def my_function(*, name):   
     print("Hello", name)
     
@@ -195,7 +195,7 @@ def my_function(name):
 my_function("Alice")  # This will output: Hello Alice
 
 # Combining positional-only and keyword-only arguments
-# You can combine positional-only and keyword-only arguments in a function definition. Use , / for positional-only arguments and *, for keyword-only arguments.
+# You can combine positional-only and keyword-only arguments in a function definition. Use (, /) for positional-only arguments and (*,) for keyword-only arguments.
 
 def my_function(a, b , /, *, c, d):
     return a + b + c + d
