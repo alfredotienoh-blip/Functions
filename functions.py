@@ -130,3 +130,11 @@ def my_function(fruits):
         
 my_fruits = ["apple", "banana", "cherry"]
 my_function(my_fruits)  # This will output: apple, banana, cherry
+
+#Sending a dictionary as an argument
+def my_function(person):
+    print("Name: " + person["name"])
+    print("Age: " + person["age"])
+    
+my_person = {"name": "Alice", "age": "30"}
+my_function(my_person)  # This will output: Name: Alice, Age: 30
