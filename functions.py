@@ -109,3 +109,12 @@ def my_function(animal, name):
     print("My " + animal + "'s name is " + name)
     
 my_function("Buddy", "dog")  # This will output: I have a Buddy. My Buddy's name is dog.
+
+#Mixing key word and positional arguments
+# You can mix positional and keyword arguments when calling a function. However, positional arguments must come before keyword arguments.
+#However positional arguments must come before keyword arguments. If you try to put a positional argument after a keyword argument, you will get a syntax error.
+
+def my_function(animal, name, age):
+    print("I have a " + str(age) + " year old " + animal + " named " + name)
+
+my_function("dog", name = "Buddy", age=5)  # This will output: I have a 5 year old dog named Buddy.
