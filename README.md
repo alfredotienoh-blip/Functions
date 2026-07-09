@@ -1,7 +1,7 @@
 # Functions
 # Creating functions
-""" A function is defined using the key word def followed by the function name and parentheses.
- The code block within every function starts with a colon (:) and is indented."""
+## A function is defined using the keyword def followed by the function name and parentheses.
+ ## The code block within every function starts with a colon (:) and is indented.
  
 def hello_function():
     print("Hello, World!")
