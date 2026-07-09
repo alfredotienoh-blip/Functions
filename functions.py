@@ -173,3 +173,10 @@ def my_function(name, /):
     print("Hello", name)
     
 my_function("Alice")  # This will output: Hello Alice
+
+# Without ,/ you are allowed to use keyword arguments
+def my_function(name):
+    print("Hello", name)    
+    
+my_function(name="Alice")  # This will output: Hello Alice
+
