@@ -118,3 +118,15 @@ def my_function(animal, name, age):
     print("I have a " + str(age) + " year old " + animal + " named " + name)
 
 my_function("dog", name = "Buddy", age=5)  # This will output: I have a 5 year old dog named Buddy.
+
+#Passing different data types
+#You can pass any data type as an argument to a function, including strings, numbers, lists, tuples, dictionaries, and even other functions.
+#The data type will be preserved inside the function
+
+#Sending a list as an argument
+def my_function(fruits):
+    for fruit in fruits:
+        print(fruit)    
+        
+my_fruits = ["apple", "banana", "cherry"]
+my_function(my_fruits)  # This will output: apple, banana, cherry
