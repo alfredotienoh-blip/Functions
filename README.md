@@ -1,5 +1,5 @@
 # Functions
-#Creating functions
+# Creating functions
 """ A function is defined using the key word def followed by the function name and parentheses.
  The code block within every function starts with a colon (:) and is indented."""
  
@@ -26,7 +26,7 @@ print(fahrenheit_to_celsius(98.6))  # This will output: 37.0
 
 
 
-#Return values
+# Return values
 # Functions can return values using the return statement. The return statement ends the function execution and sends
 
 def Get_greeting():
@@ -34,14 +34,14 @@ def Get_greeting():
 message = Get_greeting()
 print(message)  # This will output: Hello, welcome to the program!
 
-#You can use the returned value directly
+# You can use the returned value directly
 
 def get_greeting():
     return "Hello, welcome to the program!"
 print(get_greeting())  # This will output: Hello, welcome to the program!
 
-#The pass statement
-# Function definations cannot be empty. If you need to create a function placeholder without any code, use the pass statement
+# The pass statement
+# Function definitions cannot be empty. If you need to create a function placeholder without any code, use the pass statement
 def placeholder_function():
     pass  # This function does nothing and serves as a placeholder. 
 
@@ -78,15 +78,15 @@ my_function()  # This will output: I am from Kenya
 my_function("Tanzania")  # This will output: I am from Tanzania
 my_function("Rwanda")  # This will output: I am from Rwanda
 
-#Keyword arguments
-#You can send arguments with key=value syntax
+# Keyword arguments
+# You can send arguments with key=value syntax
 def my_function(animal, name):
     print("I have a " + animal)
     print("My " + animal + "'s name is " + name)
     
 my_function(animal = "dog", name = "Buddy")  # This will output: I have a dog. My dog's name is Buddy.
 
-#This way with key arguments, the order of arguments does not matter
+# This way with key arguments, the order of arguments does not matter
 
 def my_function(animal, name):
     print("I have a " + animal)
@@ -95,7 +95,7 @@ def my_function(animal, name):
 my_function(name = "Buddy", animal = "dog")  # This will output: I have a dog. My dog's name is Buddy.
 
 
-#Positional arguments
+# Positional arguments
 #When you call a function with arguments without using key words, they are called positional arguments. The order of the arguments matters in this case.
 def my_function(animal, name):
     print("I have a " + animal)
@@ -103,15 +103,15 @@ def my_function(animal, name):
     
 my_function("dog", "Buddy")  # This will output: I have a dog. My dog's name is Buddy.
 
-#The order matters with positional arguments
-#Swithing the order of the arguments will change the output
+# The order matters with positional arguments
+# Swithing the order of the arguments will change the output
 def my_function(animal, name):
     print("I have a " + animal)
     print("My " + animal + "'s name is " + name)
     
 my_function("Buddy", "dog")  # This will output: I have a Buddy. My Buddy's name is dog.
 
-#Mixing key word and positional arguments
+# Mixing key word and positional arguments
 # You can mix positional and keyword arguments when calling a function. However, positional arguments must come before keyword arguments.
 #However positional arguments must come before keyword arguments. If you try to put a positional argument after a keyword argument, you will get a syntax error.
 
@@ -120,11 +120,11 @@ def my_function(animal, name, age):
 
 my_function("dog", name = "Buddy", age=5)  # This will output: I have a 5 year old dog named Buddy.
 
-#Passing different data types
+# Passing different data types
 #You can pass any data type as an argument to a function, including strings, numbers, lists, tuples, dictionaries, and even other functions.
 #The data type will be preserved inside the function
 
-#Sending a list as an argument
+# Sending a list as an argument
 def my_function(fruits):
     for fruit in fruits:
         print(fruit)    
@@ -132,7 +132,7 @@ def my_function(fruits):
 my_fruits = ["apple", "banana", "cherry"]
 my_function(my_fruits)  # This will output: apple, banana, cherry
 
-#Sending a dictionary as an argument
+# Sending a dictionary as an argument
 def my_function(person):
     print("Name: " + person["name"])
     print("Age: " + person["age"])
@@ -140,8 +140,8 @@ def my_function(person):
 my_person = {"name": "Alice", "age": "30"}
 my_function(my_person)  # This will output: Name: Alice, Age: 30
 
-#Return value
-#Functions can return a value using the return statement
+# Return value
+# Functions can return a value using the return statement
 
 def my_function(x, y):
     return x + y
@@ -149,8 +149,8 @@ def my_function(x, y):
 result = my_function(5, 3)
 print(result)  # This will output: 8
 
-#Returning different data types
-#A function that returns a list
+# Returning different data types
+# A function that returns a list
 def my_function():
     return ["Aples","Bananas","Oranges","Grapes"]
 
@@ -160,7 +160,7 @@ print(fruits[1])
 print(fruits[2])
 print(fruits[3])
 
-#A function that returns a tuple
+# A function that returns a tuple
 
 def my_function():
     return(50, 30)
@@ -168,7 +168,7 @@ x, y = my_function()
 print("x:", x)  # This will output: x: 50
 print("y:", y)  # This will output: y: 30
 
-#POsitional only arguments
+# POsitional only arguments
 #You can specify that a function can have only positional arguments. Add , / after the argument
 def my_function(name, /):
     print("Hello", name)
